@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+ <header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><img src="images/logosvt.png">есок в плавках</a>
+
+    <nav class="navbar">
+        <a href="#home">Главная</a>
+        <a href="#book">Бронирование</a>
+        <a href="#gallery">Галерея работ</a>
+        <a href="#contact">Контакты</a>
+        <a href="#packages">Направления</a>
+        <a href="#review">Отзывы</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Поиск здесь...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+ </header>   
+
+
+<div class="login-form-container">
+
+    <i class="fas fa-time" id="form-close"></i>
+
+    <form action="" class="active">
+        <h3>Зарегистрироваться</h3>
+        <input type="email" class="box" placeholder="Введите свою почту">
+        <input type="password" class="box" placeholder="Введите свой пароль">
+        <input type="submit" value="Зарегистрироваться" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Запомнить меня</label>
+        <p>Забыли пароль?<a href="#">Нажмите здесь</a></p>
+        <p>Нет аккаунта?<a href="#">Зарегистрируйтесь</a></p>
+    </form>
+
+</div>
+
+
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Добро пожаловать на наше туристическое агентсво!</h3>
+        <p>Туры по кавказу и многим другим регионам России и зарубежья!</p>
+        <a href="#" class="btn">Узнать больше</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-kavkaz.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-uz.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-mexico.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-kavkaz.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-kavkaz.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-kavkaz.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>Б</span>
+        <span>р</span>
+        <span>о</span>
+        <span>н</span>
+        <span>и</span>
+        <span>р</span>
+        <span>о</span>
+        <span>в</span>
+        <span>а</span>
+        <span>т</span>
+        <span>ь</span>
+        <span class="space"></span>
+        <span>т</span>
+        <span>у</span>
+        <span>т</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/palme.png" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>Куда?</h3>
+                <input type="text" placeholder="Место">
+            </div>
+            <div class="inputBox">
+                <h3>Сколько вас?</h3>
+                <input type="number" placeholder="Количество человек">
+            </div>
+            <div class="inputBox">
+                <h3>Дата прибытия</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>Дата отправления</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="Забронировать">
+        </form>
+
+    </div>
+
+</section>
+
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>Т</span>
+        <span>у</span>
+        <span>р</span>
+        <span>ы</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/grozniy.png" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Грозный </h3>
+                <p>Этот город находится в самом красивом месте Кавказа, но президент его самый строгий.</p>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="far-fa-star"></i>
+                </div>
+                <div class="price"> 100 000 руб. <span>1 000 000 руб.</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+         
+        <div class="box">
+            <img src="images/tashkent.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Ташкент </h3>
+                <p>Столица Узбекистана. Если хочешь понять, откуда в нашей стране берутся работники, едь туда.</p>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="far-fa-star"></i>
+                </div>
+                <div class="price"> 100 000 руб. <span>1 000 000 руб.</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/vorkuta.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Воркута </h3>
+                <p>Северный вымирающий город. Славится он самым дешевым жильём во всей стране. Если хочешь расслабится и поддержать 
+                его существование, этот город твой.</p>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="far-fa-star"></i>
+                </div>
+                <div class="price"> 100 000 руб. <span>1 000 000 руб.</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/vladik.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Владивосток </h3>
+                <p>Красивый город. Имеет близость с азиатами. Легко купить подержаный японский авто.</p>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="far-fa-star"></i>
+                </div>
+                <div class="price"> 100 000 руб. <span>1 000 000 руб.</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sevastopol.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Севастополь </h3>
+                <p>Самый жаркий город. Находится в самом спорном месте. Будьте готовы к особым условиям.</p>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="far-fa-star"></i>
+                </div>
+                <div class="price"> 100 000 руб. <span>1 000 000 руб.</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/almaty.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Алма-Аты </h3>
+                <p>Город в Казахстане. Славится огромным количеством штрафов. Зато очень много красивых мест.</p>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="far-fa-star"></i>
+                </div>
+                <div class="price"> 100 000 руб. <span>1 000 000 руб.</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>У</span>
+        <span>с</span>
+        <span>л</span>
+        <span>у</span>
+        <span>г</span>
+        <span>и</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Отели свободные</h3>
+            <p>Мы вам предоставляем множество доступных выгодных 4 звездочных отелей.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Еда и напитки</h3>
+            <p>Очень много еды по самым низким ценам.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Гарантия безопасности</h3>
+            <p>Когда вы бронируете наш тур, мы вам даём страховку, если с вами что-то случится.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Вокруг света</h3>
+            <p>Наши туры доступны по всему миру.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Скоростное путешествие</h3>
+            <p>У нас туры доступны как на наземном, так и на воздушном транспорте.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Путешествия</h3>
+            <p>У нас вы получите только самые незабываемые путешествия.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>Г</span>
+        <span>а</span>
+        <span>л</span>
+        <span>е</span>
+        <span>р</span>
+        <span>е</span>
+        <span>я</span>
+        <span class="space"></span>
+        <span>р</span>
+        <span>а</span>
+        <span>б</span>
+        <span>о</span>
+        <span>т</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/grozniy-city.jpg" alt="">
+            <div class="content">
+                <h3>Чечня</h3>
+                <p>Грозный-Сити.</p>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/uzbekistan.jpg" alt="">
+            <div class="content">
+                <h3>Ташкент</h3>
+                <p>Мечеть Минор.</p>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/armenia.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места</h3>
+                <p>Церковь Армении</p>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/mexico.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места</h3>
+                <p>Пирамида Индейцев Майя</p>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/vladivostok.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места</h3>
+                <p>Мост Владивостока</p>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/brazil.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места</h3>
+                <p>Статуя Бога</p>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/iran.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места</h3>
+                <p>Мечеть Тегерана</p>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/columbia.jpeg" alt="">
+            <div class="content">
+                <h3>Лучшие места</h3>
+                <p>Церковь Колумбии</p>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/tatarstan.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места</h3>
+                <p>Дворец бракосочетаня</p>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>О</span>
+        <span>т</span>
+        <span>з</span>
+        <span>ы</span>
+        <span>в</span>
+        <span>ы</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/babidjon.jpg" alt="">
+                    <h3>Бабиджон Дилшодов</h3>
+                    <p>Я очень доволен своей поездкой! Сначала я приехал в самые лучшие природные 
+                        жаркие места и случайно оказался под обстрелом. Лучшее ощущение!</p>
+                </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/anastacia.jpg" alt="">
+                    <h3>Анастасия Довлатова</h3>
+                    <p>Это самая учшая поездка! Я побывала на пляже под самым палящим солнцем,
+                     на удивление он был лучше моего. Мне очень понравилось.</p>
+                </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/dmitriy.jpg" alt="">
+                    <h3>Дмитрий Остапов</h3>
+                    <p>Никогда не видел лучше этих завораживающих мест. 
+                    Кстати кормят там очень вкусно! Очень крутая компания.</p>
+                </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/sergey.jpg" alt="">
+                    <h3>Сергей Поздняков</h3>
+                    <p>Лучшие туры за свои деньги.</p>
+                </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact">
+
+    <h1 class="heading">
+        <span>К</span>
+        <span>о</span>
+        <span>н</span>
+        <span>т</span>
+        <span>а</span>
+        <span>к</span>
+        <span>т</span>
+        <span>ы</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Адрес электронной почты">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Номер">
+                <input type="text" placeholder="Предмет">
+            </div>
+            <textarea placeholder="Сообщение" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Отправить">
+        </form>
+
+    </div>
+
+</section>
+
+
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/redbull.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/yugra.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/gost.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/biblio.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/cocacola.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/alpha.png" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>О нас</h3>
+            <p>Вот уже 14 лет мы занимаемся успешными подборами и оформлениями туров во всех странах мира. 
+            За столь долгое время клиенты всегда оставались очень довольными и им никогда не нужна была страховка.</p>
+        </div>
+        <div class="box">
+            <h3>Наше управление</h3>
+            <a href="#">г. Санкт-Петербург, ул. Дыбенко, д.26к1</a>
+        </div>
+        <div class="box">
+            <h3>Быстрый переход</h3>
+            <a href="#">Главная</a>
+            <a href="#">Бронирование</a>
+            <a href="#">Галерея работ</a>
+            <a href="#">Контакты</a>
+            <a href="#">Направления</a>
+            <a href="#">Отзывы</a>
+        </div>
+        <div class="box">
+            <h3>Подпишитесь на нас!</h3>
+            <a href="#">YouTube</a>
+            <a href="#">VK</a>
+            <a href="#">Telegram</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> Сделал <span> Поваров Илья </span> | Все права защищены</h1>
+
+</section>
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
